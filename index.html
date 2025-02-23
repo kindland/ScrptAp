@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Sansar Script API: Sansar.Simulation</title>
+    <title>Sansar Script API: Sansar.Script</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
         a { text-decoration: none }
@@ -195,7 +195,7 @@
     <div class="CollectionTitle">
       <a href="../index.html">Sansar Script API</a>
     </div>
-    <h1 class="PageTitle">Sansar.Simulation Namespace</h1>
+    <h1 class="PageTitle">Sansar.Script Namespace</h1>
     <p class="Summary">
     </p>
     <div>
@@ -212,718 +212,335 @@
         </tr>
         <tr valign="top">
           <td>
-            <a href="./AgentInfo.html">AgentInfo</a>
-          </td>
-          <td>The AgentInfo class has basic information and IDs for an agent.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./AgentPrivate.html">AgentPrivate</a>
-          </td>
-          <td>The AgentPrivate class is the full interface for interactions with avatars.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./AgentPublic.html">AgentPublic</a>
-          </td>
-          <td>The AgentPublic class is a more limited subset of the <a href="../Sansar.Simulation/AgentPrivate.html">Sansar.Simulation.AgentPrivate</a> API for use by other scripts in the scene.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./AgentScript.html">AgentScript</a>
+            <a href="./AddEntryAttribute.html">AddEntryAttribute</a>
           </td>
           <td>
-            Extend AgentScript to create a script to be attached directly to an agent.
-            For future use: Sansar does not currently support adding scripts to agents.
+            A
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./Animation.html">Animation</a>
+            <a href="./CancelData.html">CancelData</a>
           </td>
           <td>
-            Represents a scriptable Animation node.
+            The event is sent when a subscription is canceled.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./AnimationBoneSubset.html">AnimationBoneSubset</a>
+            <a href="./ComponentId.html">ComponentId</a>
           </td>
           <td>
-            Enumeration for different animation skeleton subsets
+            Encapsulates a Component Id.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./AnimationComponent.html">AnimationComponent</a>
-          </td>
-          <td>The AnimationComponent handles interactions with animations.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./AnimationComponent+SubscriptionHandler.html">AnimationComponent.SubscriptionHandler</a>
-          </td>
-          <td>Animation events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./AnimationData.html">AnimationData</a>
-          </td>
-          <td>Animation events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./AnimationParameters.html">AnimationParameters</a>
+            <a href="./CoroutineException.html">CoroutineException</a>
           </td>
           <td>
-            The AnimationParameters struct contains settings for playing animations.
+            An exception occurred relating to Coroutine execution.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./AnimationPlaybackMode.html">AnimationPlaybackMode</a>
+            <a href="./DefaultScriptAttribute.html">DefaultScriptAttribute</a>
           </td>
           <td>
-            Enumeration for the different animation playback modes
+            Tags a class to be the default selection for this script project.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./AudioComponent.html">AudioComponent</a>
+            <a href="./DefaultValueAttribute.html">DefaultValueAttribute</a>
           </td>
-          <td>The AudioComponent handles interactions with audio components.</td>
+          <td>
+             Set a default value to show in the script properties field.
+             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./CameraComponent.html">CameraComponent</a>
-          </td>
-          <td>The CameraComponent handles interactions with cameras.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CameraControlMode.html">CameraControlMode</a>
-          </td>
-          <td>Type of camera mode a user is in.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CharacterAnimation.html">CharacterAnimation</a>
-          </td>
-          <td>The CharacterAnimation class represents an animation that can be played on a character component.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CharacterComponent.html">CharacterComponent</a>
-          </td>
-          <td>The CharacterComponent handles character specific operations like playing CharacterAnimations.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CharacterTracker.html">CharacterTracker</a>
-          </td>
-          <td>The CharacterTracker keeps track of the quests associated with a QuestCharacter for a user.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CharacterTrackerData.html">CharacterTrackerData</a>
-          </td>
-          <td>Handler for Character Tracker update events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Chat.html">Chat</a>
-          </td>
-          <td>The Chat class handles chat subscriptions and sending messages to users and other scripts.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Chat+SubscriptionHandler.html">Chat.SubscriptionHandler</a>
-          </td>
-          <td>Subscribe to receive events on chat messages from the system, users or scripts.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ChatData.html">ChatData</a>
-          </td>
-          <td>Subscribe to receive events on chat messages from the system, users or scripts.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Client.html">Client</a>
-          </td>
-          <td>The Client class is used for access to the Client connected to a <a href="../Sansar.Simulation/AgentPrivate.html">Sansar.Simulation.AgentPrivate</a>.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Cluster.html">Cluster</a>
-          </td>
-          <td>The Cluster class handles interactions with in game objects.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ClusterId.html">ClusterId</a>
+            <a href="./DisplayNameAttribute.html">DisplayNameAttribute</a>
           </td>
           <td>
-            Encapsulates an Cluster Id.
+            Set the name to be shown in script properties for this field.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./ClusterResource.html">ClusterResource</a>
-          </td>
-          <td>The ClusterResource class represents a cluster that could be added to the scene. See <a href="../Sansar.Simulation/ScenePrivate.html#M:Sansar.Simulation.ScenePrivate.CreateCluster(Sansar.Simulation.ClusterResource,Sansar.Vector,Sansar.Quaternion,Sansar.Vector,Sansar.Simulation.ScenePrivate.CreateComplete)">Sansar.Simulation.ScenePrivate.CreateCluster(Sansar.Simulation.ClusterResource, Sansar.Vector, Sansar.Quaternion, Sansar.Vector, Sansar.Simulation.ScenePrivate.CreateComplete)</a>.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CollisionData.html">CollisionData</a>
-          </td>
-          <td>Handler for rigid body events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CollisionEventPhase.html">CollisionEventPhase</a>
-          </td>
-          <td>Phase for events that encapsulate sequence of occurrences</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CollisionEventType.html">CollisionEventType</a>
-          </td>
-          <td>Type of collision event.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./CommandAction.html">CommandAction</a>
+            <a href="./EditorVisibleAttribute.html">EditorVisibleAttribute</a>
           </td>
           <td>
-            Specifies a command action.
+            Explicitly set the editor visibility of a script field or class.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./CommandData.html">CommandData</a>
-          </td>
-          <td>Command events are generated by the client when input events occur.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ComponentType.html">ComponentType</a>
-          </td>
-          <td>Type of component. See <a href="../Sansar.Simulation/ObjectPrivate.html#M:Sansar.Simulation.ObjectPrivate.GetComponent(Sansar.Simulation.ComponentType,System.UInt32)">Sansar.Simulation.ObjectPrivate.GetComponent(Sansar.Simulation.ComponentType, uint)</a></td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ControlPointType.html">ControlPointType</a>
-          </td>
-          <td>Control points are a representation of some spatial inputs, primarily VR controllers.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./DataStore.html">DataStore</a>
+            <a href="./EntriesAttribute.html">EntriesAttribute</a>
           </td>
           <td>
-            The <a href="../Sansar.Simulation/DataStore.html">Sansar.Simulation.DataStore</a> class provides access to a persistent data store that can be accessed by scripts from any experience.
+            List of entries to populate IList or IDictionary properties with.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./DataStore+Options.html">DataStore.Options</a>
+            <a href="./ErrorModeAttribute.html">ErrorModeAttribute</a>
           </td>
           <td>
-            Controls how various <a href="../Sansar.Simulation/DataStore.html">Sansar.Simulation.DataStore</a> operations proceed.
+            Set the Api Error mode for this script.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./DataStore+Result`1.html">DataStore.Result&lt;T&gt;</a>
-          </td>
-          <td>Holds the result of operations on a <a href="../Sansar.Simulation/DataStore.html">Sansar.Simulation.DataStore</a>.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./HeldObjectData.html">HeldObjectData</a>
-          </td>
-          <td>Handler for agent grab events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./HeldObjectEventType.html">HeldObjectEventType</a>
-          </td>
-          <td>Type of held object event.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./HeldObjectInfo.html">HeldObjectInfo</a>
-          </td>
-          <td>Information about if this HeldObjectInfo is being held by an agent. </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./HttpClient.html">HttpClient</a>
-          </td>
-          <td>The Http Client can be used to make HTTP requests to external services.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./HttpClient+RequestData.html">HttpClient.RequestData</a>
-          </td>
-          <td>The result of a <a href="../Sansar.Simulation/HttpClient.html#M:Sansar.Simulation.HttpClient.Request(System.String,Sansar.Simulation.HttpRequestOptions,System.Action{Sansar.Simulation.HttpClient.RequestData})">Sansar.Simulation.HttpClient.Request(string, Sansar.Simulation.HttpRequestOptions, Action&lt;Sansar.Simulation.HttpClient.RequestData&gt;)</a> call.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./HttpRequestMethod.html">HttpRequestMethod</a>
+            <a href="./EventData.html">EventData</a>
           </td>
           <td>
-            Enumerates the possible Http Request Methods
+            Base class for events.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./HttpRequestOptions.html">HttpRequestOptions</a>
+            <a href="./ICoroutine.html">ICoroutine</a>
           </td>
           <td>
-            Options used for <a href="../Sansar.Simulation/HttpClient.html#M:Sansar.Simulation.HttpClient.Request(System.String,Sansar.Simulation.HttpRequestOptions,System.Action{Sansar.Simulation.HttpClient.RequestData})">Sansar.Simulation.HttpClient.Request(string, Sansar.Simulation.HttpRequestOptions, Action&lt;Sansar.Simulation.HttpClient.RequestData&gt;)</a></td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./HttpResponse.html">HttpResponse</a>
-          </td>
-          <td>
-            Data returned from <a href="../Sansar.Simulation/HttpClient.html#M:Sansar.Simulation.HttpClient.Request(System.String,Sansar.Simulation.HttpRequestOptions,System.Action{Sansar.Simulation.HttpClient.RequestData})">Sansar.Simulation.HttpClient.Request(string, Sansar.Simulation.HttpRequestOptions, Action&lt;Sansar.Simulation.HttpClient.RequestData&gt;)</a></td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Interaction.html">Interaction</a>
-          </td>
-          <td>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./InteractionData.html">InteractionData</a>
-          </td>
-          <td>Handler for Interaction events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./InterpolationMode.html">InterpolationMode</a>
-          </td>
-          <td>Type of interpolation to use for various interfaces</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./LightComponent.html">LightComponent</a>
-          </td>
-          <td>The LightComponent handles interactions with lights.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./LightType.html">LightType</a>
-          </td>
-          <td>
-            Enumeration for the different types of lights
+            Token representing a coroutine.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./MaterialProperties.html">MaterialProperties</a>
+            <a href="./IEventSubscription.html">IEventSubscription</a>
           </td>
           <td>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./MediaAction.html">MediaAction</a>
-          </td>
-          <td>Special actions to perform on media surfaces with SetMediaAction</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./MeshComponent.html">MeshComponent</a>
-          </td>
-          <td>The MeshComponent handles interactions with static meshes.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ModalDialog.html">ModalDialog</a>
-          </td>
-          <td>
-            Manages a modal dialog which can be presented to the user.
+            Token representing an event subscription.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./MoveMode.html">MoveMode</a>
-          </td>
-          <td>Type of interpolation to use for movement</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Mover.html">Mover</a>
-          </td>
-          <td>The Mover handles adding moves to process for an object.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Objective.html">Objective</a>
-          </td>
-          <td>The Objective is the interface for a user's Quest Objective</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ObjectiveData.html">ObjectiveData</a>
-          </td>
-          <td>Handler for Objective state change events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ObjectiveDefinition.html">ObjectiveDefinition</a>
-          </td>
-          <td>The ObjectiveDefinition stores the data that is used to create quest objective instances for users.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ObjectiveDefinition+GetObjectiveData.html">ObjectiveDefinition.GetObjectiveData</a>
+            <a href="./InstanceInterface.html">InstanceInterface</a>
           </td>
           <td>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ObjectiveState.html">ObjectiveState</a>
-          </td>
-          <td>State of a quest objective for a user.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ObjectPrivate.html">ObjectPrivate</a>
-          </td>
-          <td>Interface to an object in a <a href="../Sansar.Simulation/Cluster.html">Sansar.Simulation.Cluster</a> in the Scene.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ObjectPrivate+AddInteractionData.html">ObjectPrivate.AddInteractionData</a>
-          </td>
-          <td>The result of AddInteraction request.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ObjectPublic.html">ObjectPublic</a>
-          </td>
-          <td>The ObjectPublic class is a more limited subset of the <a href="../Sansar.Simulation/ObjectPrivate.html">Sansar.Simulation.ObjectPrivate</a> API for use by other scripts in the scene.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ObjectScript.html">ObjectScript</a>
-          </td>
-          <td>
-            Extend SceneObjectScript to create a script that can be used on content that is rezzable in a scene.
+            Base class for all Sansar Script Object Oriented C# interfaces.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./PlayHandle.html">PlayHandle</a>
-          </td>
-          <td>The PlayHandle represents audio play handles.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./PlaySettings.html">PlaySettings</a>
+            <a href="./LockedAttribute.html">LockedAttribute</a>
           </td>
           <td>
-            The PlaySettings class contains settings for playing sounds.
+            Locks the IDictionary or IList properties so entries can not be added or removed.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./PlayStatus.html">PlayStatus</a>
+            <a href="./Log.html">Log</a>
           </td>
-          <td>Current status of the PlayStatus.</td>
+          <td>The Log class handles script logging and error reporting</td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./Quest.html">Quest</a>
-          </td>
-          <td>The Quest is the interface for a user's progress in a Quest.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./QuestCharacter.html">QuestCharacter</a>
-          </td>
-          <td>The QuestCharacter is the interface for a Quest Character</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./QuestData.html">QuestData</a>
-          </td>
-          <td>Handler for Quest state change events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./QuestDefinition.html">QuestDefinition</a>
-          </td>
-          <td>The QuestDefinition stores the data that is used to create quest instances for users.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./QuestDefinition+GetQuestData.html">QuestDefinition.GetQuestData</a>
+            <a href="./Log+Message.html">Log.Message</a>
           </td>
           <td>
-          </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./QuestState.html">QuestState</a>
-          </td>
-          <td>State of a quest for a user.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./RayCastHit.html">RayCastHit</a>
-          </td>
-          <td>Result of a Raycast.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ReactionData.html">ReactionData</a>
-          </td>
-          <td>Subscribe to receive reaction events from users.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Reactions.html">Reactions</a>
-          </td>
-          <td>The Reactions class subscriptions to user reaction events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./RenderMaterial.html">RenderMaterial</a>
-          </td>
-          <td>The RenderMaterial handles interactions with render materials.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./RigidBodyComponent.html">RigidBodyComponent</a>
-          </td>
-          <td>The RigidBodyComponent handles interactions with rigid body physics.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./RigidBodyComponent+SubscriptionHandler.html">RigidBodyComponent.SubscriptionHandler</a>
-          </td>
-          <td>Handler for rigid body events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./RigidBodyMotionType.html">RigidBodyMotionType</a>
-          </td>
-          <td>Type of motion that can be applied to a rigid body. </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./SceneInfo.html">SceneInfo</a>
-          </td>
-          <td>Information about a Scene.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./SceneObjectScript.html">SceneObjectScript</a>
-          </td>
-          <td>
-            Extend SceneObjectScript to create a script that can be used on content that is natively in the scene.
-            This is the primary script type in Sansar.
+            Represents a single console message.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./ScenePrivate.html">ScenePrivate</a>
-          </td>
-          <td>Interface for Scripts that are part of a Scene. A more complete and less limited API than <a href="../Sansar.Simulation/ScenePublic.html">Sansar.Simulation.ScenePublic</a></td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ScenePrivate+CreateClusterData.html">ScenePrivate.CreateClusterData</a>
+            <a href="./LogLevel.html">LogLevel</a>
           </td>
           <td>
-            The result of a create cluster request.
+            Used by <a href="../Sansar.Script/Log.html">Sansar.Script.Log</a> to filter messages.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./ScenePrivate+CreateClusterHandler.html">ScenePrivate.CreateClusterHandler</a>
-          </td>
-          <td>Handler for CreateCluster</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ScenePublic.html">ScenePublic</a>
-          </td>
-          <td>The Public Scene API, a more limited subset of <a href="../Sansar.Simulation/ScenePrivate.html">Sansar.Simulation.ScenePrivate</a>.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ScriptCameraControlMode.html">ScriptCameraControlMode</a>
-          </td>
-          <td>Type of control mode to use for a script camera.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./SimpleScript.html">SimpleScript</a>
+            <a href="./MaxEntriesAttribute.html">MaxEntriesAttribute</a>
           </td>
           <td>
-            Extend SimpleScript to create a script that can be used on content that is natively in the scene.
-            This is the primary script type in Sansar.
+            Set the Maximum number of array values allowed.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./SimpleScript+OnAddUserOptionsAttribute.html">SimpleScript.OnAddUserOptionsAttribute</a>
+            <a href="./Memory.html">Memory</a>
+          </td>
+          <td>The Memory class reports on script pool memory use.</td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Memory+SubscriptionHandler.html">Memory.SubscriptionHandler</a>
+          </td>
+          <td>Notifies scripts about memory events.</td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./MemoryData.html">MemoryData</a>
+          </td>
+          <td>Notifies scripts about memory events.</td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./MemoryUseLevel.html">MemoryUseLevel</a>
           </td>
           <td>
-            Use to create additional OnAddUser subscriptions
+            Used by <a href="../Sansar.Script/Memory.html">Sansar.Script.Memory</a> to report script memory use.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./SimpleScript+OnChatOptionsAttribute.html">SimpleScript.OnChatOptionsAttribute</a>
+            <a href="./MinEntriesAttribute.html">MinEntriesAttribute</a>
           </td>
           <td>
-            Set options for OnChat() overrides, or use to create more simple chat handlers.
+            Set the Minimum number of array values allowed.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./SimpleScript+OnCollisionOptionsAttribute.html">SimpleScript.OnCollisionOptionsAttribute</a>
+            <a href="./NonReflectiveAttribute.html">NonReflectiveAttribute</a>
           </td>
           <td>
-            Set options for OnCollision events, or use to create more simple collision handlers.
+            Prevents methods from being reflected using <a href="../Sansar.Script/Reflective.html#M:Sansar.Script.Reflective.AsInterface``1">Sansar.Script.Reflective.AsInterface``1</a>.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./SimpleScript+OnRemoveUserOptionsAttribute.html">SimpleScript.OnRemoveUserOptionsAttribute</a>
+            <a href="./ObjectId.html">ObjectId</a>
           </td>
           <td>
-            Use to create additional OnRemoveUser subscriptions
+            Encapsulates an Object Id.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./SimpleScript+OnScriptEventOptionsAttribute.html">SimpleScript.OnScriptEventOptionsAttribute</a>
+            <a href="./OperationCompleteEvent.html">OperationCompleteEvent</a>
           </td>
           <td>
-            Set options for OnScriptEvent events.
+            Many asynchronous APIs will trigger an OperationCompleteEvent when done.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./SimpleScript+OnTimerOptionsAttribute.html">SimpleScript.OnTimerOptionsAttribute</a>
+            <a href="./RangeAttribute.html">RangeAttribute</a>
           </td>
           <td>
-            Set options for OnTimer() overrides, or use to create more simple timers.
+            Specify a range of valid values for the field in script properties.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./SimpleScript+SimpleScriptOptionsAttribute.html">SimpleScript.SimpleScriptOptionsAttribute</a>
+            <a href="./Reflective.html">Reflective</a>
           </td>
           <td>
-            Internal Use Only
+            Base class which provides for simple reflection of methods through a given interface.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./SitEventType.html">SitEventType</a>
-          </td>
-          <td>Type of sit event.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./SitObjectData.html">SitObjectData</a>
-          </td>
-          <td>Handler for agent sit events.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./SitObjectInfo.html">SitObjectInfo</a>
-          </td>
-          <td>Information about if an agent is sitting on this SitObjectInfo. </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./SoundResource.html">SoundResource</a>
-          </td>
-          <td>The SoundResource class represents a sound that could be added to the scene.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./StreamChannel.html">StreamChannel</a>
-          </td>
-          <td>For playing a stream from the scene.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ThumbnailedClusterResource.html">ThumbnailedClusterResource</a>
-          </td>
-          <td>The ThumbnailedClusterResource class represents a cluster that has properties to be shown in the UI.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./TutorialHint.html">TutorialHint</a>
-          </td>
-          <td>Tutorial hint types.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./TwitchData.html">TwitchData</a>
-          </td>
-          <td>Twitch events are generated in response to twitch stream interaction.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./TwitchEventType.html">TwitchEventType</a>
-          </td>
-          <td>Enumerates the types of twitch events that scripts can subscribe to.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./UI.html">UI</a>
-          </td>
-          <td>Manages the client UI.</td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./UIProgressBar.html">UIProgressBar</a>
+            <a href="./Reflective+Context.html">Reflective.Context</a>
           </td>
           <td>
-            Manages a progress bar UI element.
+            Use with <a href="../Sansar.Script/RegisterReflectiveAttribute.html">Sansar.Script.RegisterReflectiveAttribute</a>  and <a href="../Sansar.Script/Reflective.html#M:Sansar.Script.Reflective.Register(Sansar.Script.Reflective.Context)">Sansar.Script.Reflective.Register(Sansar.Script.Reflective.Context)</a> to specify specific access context for the registered reflective class. 
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./UIScoreBoard.html">UIScoreBoard</a>
+            <a href="./Reflective+ReflectiveBase.html">Reflective.ReflectiveBase</a>
+          </td>
+          <td>Internal support class.</td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./RegisterReflectiveAttribute.html">RegisterReflectiveAttribute</a>
           </td>
           <td>
-            Manages a score board HUD element.
+            Registers this class to be found via <a href="../Sansar.Simulation/ScenePrivate.html#M:Sansar.Simulation.ScenePrivate.FindReflective``1(System.String)">Sansar.Simulation.ScenePrivate.FindReflective``1(string)</a>.
             </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./User.html">User</a>
+            <a href="./ScriptBase.html">ScriptBase</a>
           </td>
-          <td>The User class handles interactions user logins and logoffs.</td>
+          <td>
+            Base class for all scripts, has ScriptHandle accessors and coroutine utilities.
+            </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./User+SubscriptionHandler.html">User.SubscriptionHandler</a>
+            <a href="./ScriptBase+OperationComplete.html">ScriptBase.OperationComplete</a>
           </td>
-          <td>Subscribe to receive events when users enter or leave the experience, or change their chat name.</td>
+          <td>
+            Used to obtain notification that the operation has completed.
+            </td>
         </tr>
         <tr valign="top">
           <td>
-            <a href="./UserData.html">UserData</a>
+            <a href="./ScriptBase+ScopedLock.html">ScriptBase.ScopedLock</a>
           </td>
-          <td>Subscribe to receive events when users enter or leave the experience.</td>
+          <td>
+            Returned from <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.Lock(System.Object)">Sansar.Script.ScriptBase.Lock(object)</a> for use in using statements.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ScriptEventData.html">ScriptEventData</a>
+          </td>
+          <td>
+            Result of a <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.PostScriptEvent(Sansar.Script.ScriptId,System.String,Sansar.Script.Reflective)">Sansar.Script.ScriptBase.PostScriptEvent(Sansar.Script.ScriptId, string, Sansar.Script.Reflective)</a> call.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ScriptHandle.html">ScriptHandle</a>
+          </td>
+          <td>
+            A running script in Sansar.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ScriptId.html">ScriptId</a>
+          </td>
+          <td>
+            Encapsulates an Script Id.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./SessionId.html">SessionId</a>
+          </td>
+          <td>
+            Encapsulates a Session Id.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./SimpleScriptEventData.html">SimpleScriptEventData</a>
+          </td>
+          <td>
+            Used by <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.PostSimpleScriptEvent(System.String,System.Object)">Sansar.Script.ScriptBase.PostSimpleScriptEvent(string, object)</a> to send simple script events.  
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ThrottleException.html">ThrottleException</a>
+          </td>
+          <td>Thrown when a method is called too often</td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Timer.html">Timer</a>
+          </td>
+          <td>
+            The Timer class is a static class that manages timer events for a script. 
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./TooltipAttribute.html">TooltipAttribute</a>
+          </td>
+          <td>
+            Set a helpful tooltip message to show in the editor.
+            </td>
         </tr>
       </table>
     </div>
