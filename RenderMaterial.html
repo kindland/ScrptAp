@@ -1,0 +1,706 @@
+<html>
+  <head>
+    <title>Sansar.Simulation.RenderMaterial</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        a { text-decoration: none }
+
+        body {margin-left: 20px;margin-right: 20px;}
+
+        div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+        }
+
+        .CollectionTitle { font-weight: bold }
+        .PageTitle { font-size: 150%; font-weight: bold }
+
+        .Summary { }
+        .Signature { }
+        .Remarks { }
+        .Members { }
+        .Copyright { }
+
+        .Section { font-size: 125%; font-weight: bold }
+        p.Summary {
+        margin-left: 1em;
+        }
+        .SectionBox { margin-left: 2em }
+        .NamespaceName { font-size: 105%; font-weight: bold }
+        .NamespaceSumary { }
+        .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+        .Subsection { font-size: 105%; font-weight: bold }
+        .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+        .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; width: 60%;}
+
+        .TypesListing {
+        border-collapse: collapse;
+        }
+
+        td {
+        vertical-align: top;
+        }
+        th {
+        text-align: left;
+        }
+
+        .TypesListing td {
+        margin: 0px;
+        padding: .25em;
+        border: solid gray 1px;
+        }
+
+        .TypesListing th {
+        margin: 0px;
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+        }
+
+        div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+        }
+
+        span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;
+        }
+
+        [id$=Remarks] span.NotEntered {
+        visibility: hidden;
+        }
+
+        div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+        }
+
+        div.Header * {
+        font-size: smaller;
+        }
+
+        div.Note {
+        }
+
+        i.ParamRef {
+        }
+
+        i.subtitle {
+        }
+
+        ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+        }
+
+        ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+        }
+
+        table.HeaderTable {
+        }
+
+        table.SignatureTable {
+        }
+
+        table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+        }
+
+        table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+        }
+
+        table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+        }
+
+        table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+        }
+
+        table.Documentation {
+        }
+
+        table.TypeMembers {
+        }
+
+        div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+        }
+
+        div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+        }
+
+        div.CodeExample div {
+        margin: 0.5em;
+        }
+
+        h4 {
+        margin-bottom: 0;
+        }
+
+        div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+        }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Sansar.Simulation</a> : <a href="index.html">Sansar.Simulation Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Sansar.Simulation.RenderMaterial">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Sansar.Simulation.RenderMaterial:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Sansar.Simulation.RenderMaterial:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Sansar.Simulation.RenderMaterial:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Sansar.Simulation.RenderMaterial">RenderMaterial  Class</h1>
+    <p class="Summary" id="T:Sansar.Simulation.RenderMaterial:Summary">The RenderMaterial handles interactions with render materials.</p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Sansar.Simulation.RenderMaterial:Signature">[Sansar.Script.Interface]<br />public class  <b>RenderMaterial</b> : <a href="../Sansar.Script/InstanceInterface.html">Sansar.Script.InstanceInterface</a></div>
+    </div>
+    <div class="Remarks" id="T:Sansar.Simulation.RenderMaterial:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Sansar.Simulation.RenderMaterial:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Sansar.Simulation.RenderMaterial:Docs:Version Information">
+        <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../Sansar.Script/InstanceInterface.html">Sansar.Script.InstanceInterface</a>.
+							</p>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.RenderMaterial.HasAbsorption">HasAbsorption</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. Whether or not this material allows changing absorption.</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.RenderMaterial.HasBrightness">HasBrightness</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. Whether or not this material allows changing brightness.</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.RenderMaterial.HasEmissiveIntensity">HasEmissiveIntensity</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. Whether or not this material allows changing emissive intensity.</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.RenderMaterial.HasFlipbookFrame">HasFlipbookFrame</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. Whether or not this material allows flipbook animation.</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.RenderMaterial.HasTint">HasTint</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. Whether or not this material allows tinting.</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.RenderMaterial.Index">Index</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. Gets the internal index for the material</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="../Sansar.Script/InstanceInterface.html#P:Sansar.Script.InstanceInterface.IsValid">IsValid</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+            Whether or not this interface is valid.
+             (<i>Inherited from <a href="../Sansar.Script/InstanceInterface.html">Sansar.Script.InstanceInterface</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.RenderMaterial.Name">Name</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. Gets the name of the material</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.RenderMaterial.ShaderType">ShaderType</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. Gets a string identifying the type of shader.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.RenderMaterial.GetProperties()">GetProperties</a>
+                  </b>()<nobr> : <a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a></nobr><blockquote>Get the MaterialProperties</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties)">SetProperties</a>
+                  </b>(<a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a>)<blockquote>Set new values for MaterialProperties</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Action{Sansar.Script.OperationCompleteEvent})">SetProperties</a>
+                  </b>(<a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a>)<blockquote>Set new values for MaterialProperties</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode)">SetProperties</a>
+                  </b>(<a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>, <a href="../Sansar.Simulation/InterpolationMode.html">InterpolationMode</a>)<blockquote>Set new values for MaterialProperties interpolated over time</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode,System.Action{Sansar.Script.OperationCompleteEvent})">SetProperties</a>
+                  </b>(<a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>, <a href="../Sansar.Simulation/InterpolationMode.html">InterpolationMode</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a>)<blockquote>Set new values for MaterialProperties interpolated over time</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.RenderMaterial.ToString()">ToString</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote> A string representation of this object. </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Sansar.Simulation.RenderMaterial:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Sansar.Simulation.RenderMaterial.GetProperties()">GetProperties Method</h3>
+        <blockquote id="M:Sansar.Simulation.RenderMaterial.GetProperties():member">
+          <div class="msummary">Get the MaterialProperties</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a> <b>GetProperties</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.RenderMaterial.GetProperties():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.GetProperties():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.GetProperties():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.RenderMaterial.HasAbsorption">HasAbsorption Property</h3>
+        <blockquote id="P:Sansar.Simulation.RenderMaterial.HasAbsorption:member">
+          <div class="msummary">Whether or not this material allows changing absorption.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>HasAbsorption</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.RenderMaterial.HasAbsorption:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasAbsorption:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasAbsorption:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.RenderMaterial.HasBrightness">HasBrightness Property</h3>
+        <blockquote id="P:Sansar.Simulation.RenderMaterial.HasBrightness:member">
+          <div class="msummary">Whether or not this material allows changing brightness.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>HasBrightness</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.RenderMaterial.HasBrightness:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasBrightness:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasBrightness:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.RenderMaterial.HasEmissiveIntensity">HasEmissiveIntensity Property</h3>
+        <blockquote id="P:Sansar.Simulation.RenderMaterial.HasEmissiveIntensity:member">
+          <div class="msummary">Whether or not this material allows changing emissive intensity.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>HasEmissiveIntensity</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.RenderMaterial.HasEmissiveIntensity:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasEmissiveIntensity:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasEmissiveIntensity:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.RenderMaterial.HasFlipbookFrame">HasFlipbookFrame Property</h3>
+        <blockquote id="P:Sansar.Simulation.RenderMaterial.HasFlipbookFrame:member">
+          <div class="msummary">Whether or not this material allows flipbook animation.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>HasFlipbookFrame</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.RenderMaterial.HasFlipbookFrame:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasFlipbookFrame:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasFlipbookFrame:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.RenderMaterial.HasTint">HasTint Property</h3>
+        <blockquote id="P:Sansar.Simulation.RenderMaterial.HasTint:member">
+          <div class="msummary">Whether or not this material allows tinting.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>HasTint</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.RenderMaterial.HasTint:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasTint:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.HasTint:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.RenderMaterial.Index">Index Property</h3>
+        <blockquote id="P:Sansar.Simulation.RenderMaterial.Index:member">
+          <div class="msummary">Gets the internal index for the material</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Index</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.RenderMaterial.Index:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.Index:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.Index:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.RenderMaterial.Name">Name Property</h3>
+        <blockquote id="P:Sansar.Simulation.RenderMaterial.Name:member">
+          <div class="msummary">Gets the name of the material</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Name</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.RenderMaterial.Name:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.Name:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.Name:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties)">SetProperties Method</h3>
+        <blockquote id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties):member">
+          <div class="msummary">Set new values for MaterialProperties</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetProperties</b> (<a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a> properties)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties):Parameters">
+            <dl>
+              <dt>
+                <i>properties</i>
+              </dt>
+              <dd>properties</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Action{Sansar.Script.OperationCompleteEvent})">SetProperties Method</h3>
+        <blockquote id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Action{Sansar.Script.OperationCompleteEvent}):member">
+          <div class="msummary">Set new values for MaterialProperties</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetProperties</b> (<a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a> properties, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a> handler)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Action{Sansar.Script.OperationCompleteEvent}):Parameters">
+            <dl>
+              <dt>
+                <i>properties</i>
+              </dt>
+              <dd>properties</dd>
+              <dt>
+                <i>handler</i>
+              </dt>
+              <dd>Handler to be called when the event completes.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Action{Sansar.Script.OperationCompleteEvent}):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Action{Sansar.Script.OperationCompleteEvent}):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode)">SetProperties Method</h3>
+        <blockquote id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode):member">
+          <div class="msummary">Set new values for MaterialProperties interpolated over time</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetProperties</b> (<a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a> properties, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> timeInSeconds, <a href="../Sansar.Simulation/InterpolationMode.html">InterpolationMode</a> interpolationMode)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode):Parameters">
+            <dl>
+              <dt>
+                <i>properties</i>
+              </dt>
+              <dd>properties</dd>
+              <dt>
+                <i>timeInSeconds</i>
+              </dt>
+              <dd>timeInSeconds</dd>
+              <dt>
+                <i>interpolationMode</i>
+              </dt>
+              <dd>timeInSeconds</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode,System.Action{Sansar.Script.OperationCompleteEvent})">SetProperties Method</h3>
+        <blockquote id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode,System.Action{Sansar.Script.OperationCompleteEvent}):member">
+          <div class="msummary">Set new values for MaterialProperties interpolated over time</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetProperties</b> (<a href="../Sansar.Simulation/MaterialProperties.html">MaterialProperties</a> properties, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> timeInSeconds, <a href="../Sansar.Simulation/InterpolationMode.html">InterpolationMode</a> interpolationMode, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a> handler)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode,System.Action{Sansar.Script.OperationCompleteEvent}):Parameters">
+            <dl>
+              <dt>
+                <i>properties</i>
+              </dt>
+              <dd>properties</dd>
+              <dt>
+                <i>timeInSeconds</i>
+              </dt>
+              <dd>timeInSeconds</dd>
+              <dt>
+                <i>interpolationMode</i>
+              </dt>
+              <dd>timeInSeconds</dd>
+              <dt>
+                <i>handler</i>
+              </dt>
+              <dd>Handler to be called when the event completes.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode,System.Action{Sansar.Script.OperationCompleteEvent}):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.SetProperties(Sansar.Simulation.MaterialProperties,System.Single,Sansar.Simulation.InterpolationMode,System.Action{Sansar.Script.OperationCompleteEvent}):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.RenderMaterial.ShaderType">ShaderType Property</h3>
+        <blockquote id="P:Sansar.Simulation.RenderMaterial.ShaderType:member">
+          <div class="msummary">Gets a string identifying the type of shader.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ShaderType</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.RenderMaterial.ShaderType:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.ShaderType:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.RenderMaterial.ShaderType:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.RenderMaterial.ToString()">ToString Method</h3>
+        <blockquote id="M:Sansar.Simulation.RenderMaterial.ToString():member">
+          <div class="msummary"> A string representation of this object. </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.RenderMaterial.ToString():Returns">A string representation of this object.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.ToString():Remarks">The format of this string may change between releases.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.RenderMaterial.ToString():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
