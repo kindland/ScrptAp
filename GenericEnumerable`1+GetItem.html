@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Sansar Script API: Sansar.Microthreading</title>
+    <title>Sansar.Utility.GenericEnumerable&lt;T&gt;.GetItem</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
         a { text-decoration: none }
@@ -193,52 +193,54 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">Sansar Script API</a>
-    </div>
-    <h1 class="PageTitle">Sansar.Microthreading Namespace</h1>
-    <p class="Summary">
-    </p>
-    <div>
-    </div>
-    <div class="Remarks">
-      <h2 class="Section"> Namespace</h2>
+      <a href="../index.html">Sansar.Script</a> : <a href="index.html">Sansar.Utility Namespace</a></div>
+    <div class="SideBar">
       <p>
-        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+        <a href="#T:Sansar.Utility.GenericEnumerable`1.GetItem">Overview</a>
       </p>
-      <table class="TypesListing" style="margin-top: 1em">
-        <tr>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ApiErrorMode.html">ApiErrorMode</a>
-          </td>
-          <td>
-            The error mode of the script. 
-            </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Microthread.html">Microthread</a>
-          </td>
-          <td>
-            Internal class used to manage scheduling of tasks
-            </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Microthread+State.html">Microthread.State</a>
-          </td>
-          <td>
-            Represents possible states for a Microthread
-            </td>
-        </tr>
-      </table>
+      <p>
+        <a href="#T:Sansar.Utility.GenericEnumerable`1.GetItem:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Sansar.Utility.GenericEnumerable`1.GetItem:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Sansar.Utility.GenericEnumerable`1.GetItem:Members">Member Details</a>
+      </p>
     </div>
-    <div class="Members">
+    <h1 class="PageTitle" id="T:Sansar.Utility.GenericEnumerable`1.GetItem">GenericEnumerable&lt;T&gt;.GetItem  Delegate</h1>
+    <p class="Summary" id="T:Sansar.Utility.GenericEnumerable`1.GetItem:Summary">
+            Delegate which returns an item by index.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Sansar.Utility.GenericEnumerable`1.GetItem:Signature">public delegate <i title="">T</i> <b>GenericEnumerable&lt;T&gt;.GetItem</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> index)<br /> where T : class</div>
+    </div>
+    <div class="Remarks" id="T:Sansar.Utility.GenericEnumerable`1.GetItem:Docs">
+      <h4 class="Subsection">Parameters</h4>
+      <blockquote class="SubsectionBox" id="T:Sansar.Utility.GenericEnumerable`1.GetItem:Docs:Parameters">
+        <dl>
+          <dt>
+            <i>index</i>
+          </dt>
+          <dd>The index of the item to retrieve. Items in the range [0..<a href="../Sansar.Utility/GenericEnumerable`1.html#P:Sansar.Utility.GenericEnumerable`1.Count">GenericEnumerable`1.Count</a>) exist, though they may be null.</dd>
+        </dl>
+      </blockquote>
+      <h4 class="Subsection">Returns</h4>
+      <blockquote class="SubsectionBox" id="T:Sansar.Utility.GenericEnumerable`1.GetItem:Docs:Returns">The item or null.</blockquote>
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Sansar.Utility.GenericEnumerable`1.GetItem:Docs:Remarks">Indexing outside the bounds of the collection may return null or thow an exception.</div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Sansar.Utility.GenericEnumerable`1.GetItem:Docs:Version Information">
+        <b>Namespace: </b>Sansar.Utility<br /><b>Assembly: </b>Sansar.Script (in Sansar.Script.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+    </div>
+    <div class="Members" id="T:Sansar.Utility.GenericEnumerable`1.GetItem:Members">
     </div>
     <hr size="1" />
-    <div class="Copyright">Copyright ©2018</div>
+    <div class="Copyright">
+    </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Sansar Script API: Sansar.Microthreading</title>
+    <title>Sansar.Utility.JsonSerializerOptions</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
         a { text-decoration: none }
@@ -193,52 +193,94 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">Sansar Script API</a>
-    </div>
-    <h1 class="PageTitle">Sansar.Microthreading Namespace</h1>
-    <p class="Summary">
-    </p>
-    <div>
-    </div>
-    <div class="Remarks">
-      <h2 class="Section"> Namespace</h2>
+      <a href="../index.html">Sansar.Script</a> : <a href="index.html">Sansar.Utility Namespace</a></div>
+    <div class="SideBar">
       <p>
-        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+        <a href="#T:Sansar.Utility.JsonSerializerOptions">Overview</a>
       </p>
-      <table class="TypesListing" style="margin-top: 1em">
-        <tr>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./ApiErrorMode.html">ApiErrorMode</a>
-          </td>
-          <td>
-            The error mode of the script. 
-            </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Microthread.html">Microthread</a>
-          </td>
-          <td>
-            Internal class used to manage scheduling of tasks
-            </td>
-        </tr>
-        <tr valign="top">
-          <td>
-            <a href="./Microthread+State.html">Microthread.State</a>
-          </td>
-          <td>
-            Represents possible states for a Microthread
-            </td>
-        </tr>
-      </table>
+      <p>
+        <a href="#T:Sansar.Utility.JsonSerializerOptions:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Sansar.Utility.JsonSerializerOptions:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Sansar.Utility.JsonSerializerOptions:Members">Member Details</a>
+      </p>
     </div>
-    <div class="Members">
+    <h1 class="PageTitle" id="T:Sansar.Utility.JsonSerializerOptions">JsonSerializerOptions  Struct</h1>
+    <p class="Summary" id="T:Sansar.Utility.JsonSerializerOptions:Summary">
+            Options which control the serialization and deserialization process
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Sansar.Utility.JsonSerializerOptions:Signature">public struct  <b>JsonSerializerOptions</b></div>
+    </div>
+    <div class="Remarks" id="T:Sansar.Utility.JsonSerializerOptions:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Sansar.Utility.JsonSerializerOptions:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Sansar.Utility.JsonSerializerOptions:Docs:Version Information">
+        <b>Namespace: </b>Sansar.Utility<br /><b>Assembly: </b>Sansar.Script (in Sansar.Script.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ValueType">ValueType</a>.
+							</p>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Utility.JsonSerializerOptions.SerializeReferences">SerializeReferences</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+            Controls how references are serialized.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Sansar.Utility.JsonSerializerOptions:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="P:Sansar.Utility.JsonSerializerOptions.SerializeReferences">SerializeReferences Property</h3>
+        <blockquote id="P:Sansar.Utility.JsonSerializerOptions.SerializeReferences:member">
+          <div class="msummary">
+            Controls how references are serialized.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: System.Runtime.CompilerServices.IsReadOnly]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>SerializeReferences</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Utility.JsonSerializerOptions.SerializeReferences:Value">When true references are maintained instead of serializing the objects directly.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Utility.JsonSerializerOptions.SerializeReferences:Remarks">Referential loops with this setting false will throw an exception.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Utility.JsonSerializerOptions.SerializeReferences:Version Information">
+            <b>Namespace: </b>Sansar.Utility<br /><b>Assembly: </b>Sansar.Script (in Sansar.Script.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
     </div>
     <hr size="1" />
-    <div class="Copyright">Copyright ©2018</div>
+    <div class="Copyright">
+    </div>
   </body>
 </html>
